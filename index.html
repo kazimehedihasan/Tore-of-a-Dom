@@ -7,9 +7,9 @@
     <title>Tour of Dom</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
-#fruits-title{
-color: black;
-}
+        #fruits-title {
+            color: black;
+        }
     </style>
 </head>
 
@@ -17,7 +17,7 @@ color: black;
     <header>
         <h1 id="page-taitel">welcome to my Dom</h1>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>My Awesome Dom de baba</h1>
             <ul>
@@ -35,20 +35,21 @@ color: black;
                 <li>carrot</li>
             </ul>
         </section>
-            <section>
-                <h1 id="plascs-title">Places I like to visit</h1>
-                <ul>
-                    <li class="improten-places">soondarban</li>
-                    <li class="improten-places">bandorban</li>
-                    <li class="improten-places">katabon</li>
-                    <li class="other-places">shalbon</li>
-                </ul>
-          
+        <section>
+            <h1 id="plascs-title">Places I like to visit</h1>
+            <ul id="plascs-list">
+                <li class="improten-places">soondarban</li>
+                <li class="improten-places">bandorban</li>
+                <li class="improten-places">katabon</li>
+                <li class="other-places">shalbon</li>
+            </ul>
+
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="js/add.js"></script>
     <script src="js/Dom.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
@@ -60,7 +61,7 @@ color: black;
         for (const h1 of allHeadings) {
             // console.log(h1.innerText);
         }
-        const fruitsTitle =document.getElementById('fruits-title');
+        const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText = 'fruits changed by js';
 
         const Places = document.getElementsByClassName('improten-places');
@@ -73,7 +74,7 @@ color: black;
         for (const li of someLi) {
             // console.log(li.innerText)
         }
-     
+
     </script>
 </body>
 

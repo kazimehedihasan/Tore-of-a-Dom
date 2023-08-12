@@ -8,3 +8,11 @@ for (const section of sections) {
    section.style.backgroundColor = 'lightgray';
     
 }
+
+// 1. where to add
+const placesList = document.getElementById('plascs-list');
+// 2. what to be added
+const li = document.createElement('li');
+li.innerText = 'pahartoli bon';
+// 3. add the child
+placesList.appendChild(li);
