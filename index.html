@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>welcome to my Dom</h1>
+    </header>
+    <main>
+        <h1>My Awesome Dom de baba</h1>
+        <ul>
+            <li>jalali</li>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>mehedi hasan</li>
+        </ul>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>carrot</li>
+        </ul>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/Dom.js"></script>
+    <script>
+     const liCollection = document.getElementsByTagName('li');
+    //  console.log(liCollection);
+    for (const li of liCollection) {
+        console.log(li.innerText);
+    }
+    const allHeadings = document.getElementsByTagName('h1');
+    for (const h1 of allHeadings) {
+        console.log(h1.innerText);
+    }
+    </script>
 </body>
+
 </html>
